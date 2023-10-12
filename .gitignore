@@ -1,5 +1,4 @@
 # folder
 node_modules
 
-# files
-./parcel-cache
+.parcel-cache
