@@ -24,8 +24,131 @@
   </head>
   <body>
     <!-- content starts -->
+    <main class="min-vh-100 d-flex flex-column justify-content-between">
+      <!-- navigation starts -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- logo -->
+          <a class="navbar-brand" href="/">
+            <div class="d-flex fw-bold fs-3 logo">
+              <span>Rooraw</span>
+              <span class="text-primary fst-italic" style="font-size: 0.5em"
+                >BETA</span
+              >
+            </div>
+          </a>
 
+          <!-- toggle button for devices smaller than lg breakpoint -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#homepage-navbar"
+            aria-controls="homepage-navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="homepage-navbar">
+            <!-- authentication -->
+            <div class="ms-lg-auto">
+              <a class="btn fw-bold" href="./login.html">Login</a>
+
+              <a class="btn btn-dark custom-dark-btn" href="./sign-up.html">
+                Sign-up
+              </a>
+            </div>
+
+            <!-- dashboard button -->
+            <a
+              class="btn btn-outline-dark custom-dark-btn ms-2"
+              href="./properties.html"
+            >
+              Dashboard
+            </a>
+          </div>
+
+          <div></div>
+        </div>
+      </nav>
+      <!-- navigation ends -->
+
+      <!-- hero section starts -->
+      <section>
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- text container -->
+            <div class="col-lg-6">
+              <!-- heading -->
+              <h2 class="display-2 fw-medium lh-sm mb-4">
+                Trouble tickets,<br />
+                without the<br />
+                trouble
+              </h2>
+
+              <!-- description -->
+              <div>
+                <p class="fs-5">
+                  Rooraw is a property management platform to allow ease-of-use
+                  for property managers, tenants, and owners.
+                </p>
+                <a class="btn btn-dark" href="#learn-more">Learn More</a>
+              </div>
+            </div>
+            <!-- image container -->
+            <div class="col-lg-6">
+              <img
+                src="./assets/images/house.jpeg"
+                alt="image house and trees in very minimal colors"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero section ends -->
+
+      <!-- footer starts -->
+      <footer class="container-fluid d-flex flex-column gap-3">
+        <!-- links section -->
+        <div class="d-flex justify-content-end">
+          <ul class="list-unstyled">
+            <li class="fw-bold fs-5 mb-1">Support</li>
+            <li>
+              <a href="#documentation" class="text-dark text-decoration-none"
+                >Documentation</a
+              >
+            </li>
+            <li>
+              <a
+                href="./help_center.html"
+                class="text-dark text-decoration-none"
+                >Sign-in Help</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- divider -->
+        <div class="divider"></div>
+
+        <!-- copyright info -->
+        <div>
+          <p class="fs-6 fw-lighter text-muted">
+            &copy;
+            <span id="year"
+              ><!-- current year will be added via javascript --></span
+            >
+            Rooraw Incorporated. All rights reserved.
+          </p>
+        </div>
+      </footer>
+      <!-- footer ends -->
+    </main>
     <!-- content ends -->
+
     <!-- main JS file -->
     <script type="module" src="./assets/js/main.js"></script>
   </body>

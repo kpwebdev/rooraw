@@ -577,6 +577,10 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 },{}],"aitAD":[function(require,module,exports) {
 // bootstrap script file
 var _bootstrap = require("bootstrap");
+// update current year in copyright section of the footer
+const yearSpan = document.querySelector("#year");
+const currentYear = new Date().getFullYear();
+yearSpan.innerHTML = currentYear;
 
 },{"bootstrap":"h36JB"}],"h36JB":[function(require,module,exports) {
 /*!
