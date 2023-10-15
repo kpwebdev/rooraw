@@ -1,1 +1,299 @@
-<script src="/tickets.ad9e96b8.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Properties</title>
+    <!-- google fonts Open Sans and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="/index.820f576f.css">
+  </head>
+  <body>
+    <!-- content starts -->
+    <main class="container-fluid">
+      <div class="row min-vh-100">
+        <!-- navigation starts -->
+        <nav class="col-md-3 d-flex flex-column justify-content-between pt-2 pb-5 lg-disappear custom-h-shadow">
+          <!-- logo -->
+          <a class="navbar-brand" href="/">
+            <div class="d-flex fw-bold fs-3 logo">
+              <span>Rooraw</span>
+              <span class="text-primary fst-italic" style="font-size: .5em">BETA</span>
+            </div>
+          </a>
+
+          <!-- Dashboard navigation links section -->
+          <div>
+            <!-- heading as per the user role type -->
+            <h3 class="mb-4">Manager Dashboard</h3>
+            <!-- links -->
+            <ul class="list-unstyled vstack">
+              <li>
+                <a href="/properties.html" class="text-decoration-none text-dark fs-4 hstack gap-3 dashboard-nav-link p-3 rounded-4">
+                  <i class="fa-solid fa-house-chimney"></i>
+                  <span class="fw-medium">Properties</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="/tenants.html" class="text-decoration-none text-dark fs-4 hstack gap-3 dashboard-nav-link p-3 rounded-4">
+                  <i class="fa-solid fa-users"></i>
+                  <span class="fw-medium">Tenants</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="/tickets.html" class="text-decoration-none text-dark fs-4 hstack gap-3 dashboard-nav-link p-3 rounded-4">
+                  <i class="fa-solid fa-ticket"></i>
+                  <span class="fw-medium">Tickets</span>
+                  <span class="ms-auto badge rounded-circle notification-num small fs-6">1</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- user info -->
+          <div class="d-flex flex-column align-items-center gap-3 mx-auto p-4 custom-bg rounded-2">
+            <!-- user fulllName -->
+            <h6>Mani Kandan</h6>
+
+            <!-- user id container -->
+            <div>
+              <!-- icon -->
+              <i class="fa-solid fa-arrow-right"></i>
+              <!-- use id -->
+              <span>ID</span>
+              <!-- icon -->
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+
+            <!-- logout button -->
+            <button type="button" class="btn btn-light">Log Out</button>
+
+            <!-- feedback modal toggler -->
+            <button type="button" class="btn btn-link text-dark custom-link" data-bs-toggle="modal" data-bs-target="#feedbackAndSupport">
+              Support / Feedback
+            </button>
+          </div>
+        </nav>
+        <!-- navigation ends -->
+
+        <!-- dashboard view starts -->
+        <section class="col-md-9 p-4">
+          <header class="mb-5">
+            <!-- name of the current page under the dashoard -->
+            <h2 class="mb-5">Tickets</h2>
+
+            <!-- tabs to navigate between active and archived -->
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="activeTab" data-bs-toggle="tab" data-bs-target="#active" type="button" role="tab" aria-controls="active" aria-selected="true">
+                  Home
+                </button>
+                <button class="nav-link" id="archivedTab" data-bs-toggle="tab" data-bs-target="#archived" type="button" role="tab" aria-controls="archived" aria-selected="false">
+                  Profile
+                </button>
+              </div>
+            </nav>
+          </header>
+
+          <!-- content for the active tab -->
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="active" role="tabpanel" aria-labelledby="activeTab" tabindex="0">
+              <!-- list of active tickets -->
+              <ul class="list-unstyled">
+                <li class="bg-light rounded-2 p-2 overflow-hidden shadow position-relative">
+                  <div class="table-responsive">
+                    <table class="table table-light table-borderless">
+                      <thead>
+                        <tr>
+                          <th class="fw-normal">Tenant</th>
+                          <th class="fw-normal">Created Date</th>
+                          <th class="fw-normal">Issue</th>
+                          <th class="fw-normal">Detail</th>
+                          <th class="fw-normal">Criticality</th>
+                          <th class="fw-normal">Status</th>
+                          <th class="fw-normal">Service Details</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td class="fw-bold">Shoaib Malik</td>
+                          <td class="fw-bold">Oct 7, 2023 4:52 pm</td>
+                          <td class="fw-bold">Test issue</td>
+                          <td class="fw-bold">Test issue</td>
+                          <td class="fw-bold">High</td>
+                          <td class="fw-bold">Pending Review</td>
+                          <td class="fw-bold">to be services on</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- edit modal toggler -->
+                  <button class="btn position-absolute bottom-0 end-0" data-bs-toggle="modal" data-bs-target="#edit   ">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <!-- content for the archived tab -->
+            <div class="tab-pane fade" id="archived" role="tabpanel" aria-labelledby="archivedTab" tabindex="0">
+              <!-- list of tenants -->
+              <ul class="list-unstyled">
+                <li class="bg-light rounded-2 p-2 overflow-hidden shadow">
+                  <div class="table-responsive">
+                    <table class="table table-light table-borderless">
+                      <thead>
+                        <tr>
+                          <th class="fw-normal">Name</th>
+                          <th class="fw-normal">Email</th>
+                          <th class="fw-normal">Tenant Since</th>
+                          <th class="fw-normal">Property</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td class="fw-bold">Shoaib Malik</td>
+                          <td class="fw-bold">malik@wergex.in</td>
+                          <td class="fw-bold">Oct 4, 2023 8:34 pm</td>
+                          <td class="fw-bold">
+                            2074 Lyndon Street, Fort Washington, Pennsylvania
+                            19034
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- dashboard view ends -->
+      </div>
+    </main>
+    <!-- content ends -->
+
+    <!-- modal for feedback and support starts -->
+    <div class="modal fade" id="feedbackAndSupport" tabindex="-1" aria-labelledby="feedbackAndSupportLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-white">
+          <div class="modal-header">
+            <h5 class="modal-title fs-5" id="feedbackAndSupportLabel">
+              Feedback
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <!-- reason select container -->
+              <div class="mb-3">
+                <label for="status" class="form-label">Reason</label>
+                <select type="text" class="form-select focus-ring focus-ring-dark" name="status">
+                  <option value="bug-fix">Bug Fix</option>
+                  <option value="feature-request">Feature Request</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- comment textarea container -->
+              <div class="mb-3">
+                <label for="comment" class="form-label">Comments</label>
+                <textarea name="comment" id="comment" rows="5" class="form-control focus-ring focus-ring-dark"></textarea>
+              </div>
+
+              <!-- submit button container -->
+              <div class="text-center">
+                <button type="submit" class="btn btn-dark custom-dark-btn">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal for feedback and support ends -->
+
+    <!-- modal for edit ticket starts -->
+    <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-white">
+          <div class="modal-header">
+            <h5 class="modal-title fs-5" id="editLabel">
+              Add/Edit Ticket Information
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <!-- status -->
+              <select type="text" class="form-select focus-ring focus-ring-dark mb-3" name="reason">
+                <option value="on-going">On-going</option>
+                <option value="pending-review">pending-review</option>
+                <option value="resolved">Resolved</option>
+              </select>
+
+              <span class="fw-bold">Provider Detail</span>
+              <div class="mb-3">
+                <label for="companyName" class="form-label visually-hidden">Company Name</label>
+                <input type="text" id="companyName" name="companyName" class="form-control focus-ring focus-ring-dark" placeholder="Company Name">
+              </div>
+
+              <div class="mb-3">
+                <label for="serviceName" class="form-label visually-hidden">Servicer Full Name</label>
+                <input type="text" id="serviceName" name="serviceName" class="form-control focus-ring focus-ring-dark" placeholder="Servicer Full Name">
+              </div>
+
+              <div class="mb-3 row">
+                <div class="col-6">
+                  <label for="city" class="form-label visually-hidden">Street</label>
+                  <input type="text" id="city" name="city" class="form-control focus-ring focus-ring-dark" placeholder="Street">
+                </div>
+
+                <div class="col-6">
+                  <label for="state" class="form-label visually-hidden">State</label>
+                  <input type="text" id="state" name="state" class="form-control focus-ring focus-ring-dark" placeholder="State">
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+                <div class="col-6">
+                  <label for="zipCode" class="form-label visually-hidden">Zip code</label>
+                  <input type="text" id="zipCode" name="zipCode" class="form-control focus-ring focus-ring-dark" placeholder="Zip code">
+                </div>
+
+                <div class="col-6">
+                  <label for="phoneNumber" class="form-label visually-hidden">Phone Number</label>
+                  <input type="text" id="phoneNumber" name="phoneNumber" class="form-control focus-ring focus-ring-dark" placeholder="Phone Number">
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="addResolution" class="form-label">Add resolution</label>
+                <textarea cols="5" type="text" id="addResolution" name="addResolution" class="form-control focus-ring focus-ring-dark" placeholder=""></textarea>
+              </div>
+
+              <!-- submit button container -->
+              <div class="text-center">
+                <button type="submit" class="btn btn-dark custom-dark-btn">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal for edit ticket ends -->
+
+    <!-- main JS file -->
+    <script src="/index.e5ac7667.js" defer=""></script>
+  </body>
+</html>
