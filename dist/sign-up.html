@@ -15,7 +15,7 @@
     <!-- tailwindcss -->
     <link rel="stylesheet" href="/index.b95b7480.css">
   </head>
-  <body>
+  <body class="t-bg-white">
     <!-- content starts -->
     <main class="min-vh-100 d-flex flex-column">
       <!-- navigation starts -->
@@ -23,9 +23,9 @@
         <div class="container-fluid">
           <!-- logo -->
           <a class="navbar-brand" href="/">
-            <div class="d-flex fw-bold fs-3 logo">
-              <span>Rooraw</span>
-              <span class="text-primary fst-italic" style="font-size: .5em">BETA</span>
+            <div class="d-flex fw-bold fs-3 logo t-font-ab">
+              <span class="t-text-24">Rooraw</span>
+              <span class="text-primary fst-italic t-text-12">BETA</span>
             </div>
           </a>
           <div></div>
@@ -36,9 +36,9 @@
       <!-- form section starts -->
       <section class="flex-grow-1 d-flex justify-content-center align-items-center">
         <div class="container">
-          <form class="authentication-form mx-auto p-3 shadow-sm rounded-2 bg-white">
-            <h2 class="mb-4 fs-3">Registration</h2>
-            <span class="fs-6 mb-2">Check boxes to create multiple account types:</span>
+          <form class="authentication-form mx-auto p-3 shadow-sm rounded-2 bg-white t-shadow-2xl">
+            <h2 class="mb-4 fs-3 t-font-os t-text-[25px]">Registration</h2>
+            <span class="fs-6 mb-2 t-font-os t-text-14">Check boxes to create multiple account types:</span>
 
             <!-- user roles -->
             <ul class="list-unstyled ms-2">
@@ -46,7 +46,7 @@
                 <!-- tenant checkbox -->
                 <div class="form-check">
                   <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="isTenant">
-                  <label class="form-check-label" for="isTenant">
+                  <label class="form-check-label t-font-os t-text-12" for="isTenant">
                     Tenant
                   </label>
                 </div>
@@ -56,7 +56,7 @@
                 <!-- manager checkbox -->
                 <div class="form-check">
                   <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="isManager">
-                  <label class="form-check-label" for="isManager">
+                  <label class="form-check-label t-font-os t-text-12" for="isManager">
                     Manger
                   </label>
                 </div>
@@ -66,45 +66,47 @@
                 <!-- manager checkbox -->
                 <div class="form-check">
                   <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="isOwner">
-                  <label class="form-check-label" for="isOwner">Owner</label>
+                  <label class="form-check-label t-font-os t-text-12" for="isOwner">Owner</label>
                 </div>
               </li>
             </ul>
 
             <!-- fullName input -->
             <div class="mb-3">
-              <label for="fullName" class="form-label">Full Name</label>
-              <input type="text" class="form-control focus-ring focus-ring-dark" id="fullName" placeholder="John Doe">
+              <label for="fullName" class="form-label t-font-os t-text-14">Full Name</label>
+              <input type="text" class="form-control t-font-os t-text-14 focus-ring focus-ring-dark" id="fullName" placeholder="John Doe">
             </div>
 
             <!-- email input -->
             <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control focus-ring focus-ring-dark" id="email" placeholder="johndoe@gmail.com">
+              <label for="email" class="form-label t-font-os t-text-14">Email</label>
+              <input type="email" class="form-control t-font-os t-text-14 focus-ring focus-ring-dark" id="email" placeholder="johndoe@gmail.com">
             </div>
 
             <!-- phoneNumber input -->
             <div class="mb-3">
-              <label for="phoneNumber" class="form-label">Phone Number</label>
-              <input type="phoneNumber" class="form-control focus-ring focus-ring-dark" id="phoneNumber" placeholder="123-456-7890">
+              <label for="phoneNumber" class="form-label t-font-os t-text-14">Phone Number</label>
+              <input type="phoneNumber" class="form-control t-font-os t-text-14 focus-ring focus-ring-dark" id="phoneNumber" placeholder="123-456-7890">
             </div>
 
             <!-- password input -->
             <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control focus-ring focus-ring-dark" id="password" placeholder="********">
-              <small class="form-text">Must be 8-12 characters</small>
+              <label for="password" class="form-label t-font-os t-text-14">Password</label>
+              <input type="password" class="form-control t-font-os t-text-14 focus-ring focus-ring-dark" id="password" placeholder="********">
+              <small class="form-text t-text-12">Must be 8-12 characters</small>
             </div>
 
             <!-- confirmPassword (Re-enter Password) input -->
             <div class="mb-3">
-              <label for="confirmPassword" class="form-label">Re-enter Password</label>
-              <input type="confirmPassword" class="form-control focus-ring focus-ring-dark" id="confirmPassword" placeholder="********">
+              <label for="confirmPassword" class="form-label t-font-os t-text-14">Re-enter Password</label>
+              <input type="confirmPassword" class="form-control t-font-os t-text-14 focus-ring focus-ring-dark" id="confirmPassword" placeholder="********">
             </div>
 
             <!-- sign up button -->
             <div class="d-grid">
-              <button type="submit" class="btn btn-dark">Sign Up</button>
+              <button type="submit" class="btn btn-dark t-text-15">
+                Sign Up
+              </button>
             </div>
 
             <!-- alternate choice => login -->

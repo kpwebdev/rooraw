@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | Properties</title>
+    <title>Sign Up</title>
     <!-- google fonts Open Sans and Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -15,83 +15,89 @@
     <!-- tailwindcss -->
     <link rel="stylesheet" href="/index.b95b7480.css">
   </head>
-  <body>
+  <body class="t-bg-white">
     <!-- content starts -->
     <main class="container-fluid">
       <div class="row min-vh-100">
         <!-- navigation starts -->
-        <nav class="col-md-3 d-flex flex-column justify-content-between pt-2 pb-5 lg-disappear custom-h-shadow">
+        <nav class="col-md-3 d-flex flex-column justify-content-between t-p-[20px] lg-disappear custom-h-shadow t-max-w-[280px] t-bg-[#e9e9e9]">
           <!-- logo -->
-          <a class="navbar-brand" href="/">
-            <div class="d-flex fw-bold fs-3 logo">
-              <span>Rooraw</span>
-              <span class="text-primary fst-italic" style="font-size: .5em">BETA</span>
+          <a class="navbar-brand t-px-[20px]" href="/">
+            <div class="d-flex fw-bold fs-3 logo t-font-ab">
+              <span class="t-text-24">Rooraw</span>
+              <span class="text-primary fst-italic t-text-12">BETA</span>
             </div>
           </a>
 
           <!-- Dashboard navigation links section -->
           <div>
             <!-- heading as per the user role type -->
-            <h3 class="mb-4">Manager Dashboard</h3>
+            <h3 class="mb-4 t-text-24 t-text-center t-font-bold t-mb-[35px]">
+              Manager Dashboard
+            </h3>
             <!-- links -->
-            <ul class="list-unstyled vstack">
+            <ul class="list-unstyled vstack t-gap-[25px]">
               <li>
-                <a href="/properties.html" class="text-decoration-none text-dark fs-4 hstack gap-3 dashboard-nav-link p-3 rounded-4">
+                <a href="/properties.html" class="text-decoration-none t-text-16 text-dark fs-4 hstack gap-3 dashboard-nav-link t-p-[10px] rounded-4">
                   <i class="fa-solid fa-house-chimney"></i>
                   <span class="fw-medium">Properties</span>
                 </a>
               </li>
 
               <li>
-                <a href="/tenants.html" class="text-decoration-none text-dark fs-4 hstack gap-3 dashboard-nav-link p-3 rounded-4">
+                <a href="/tenants.html" class="text-decoration-none t-text-16 text-dark fs-4 hstack gap-3 dashboard-nav-link t-p-[10px] rounded-4">
                   <i class="fa-solid fa-users"></i>
                   <span class="fw-medium">Tenants</span>
                 </a>
               </li>
 
               <li>
-                <a href="/tickets.html" class="text-decoration-none text-dark fs-4 hstack gap-3 dashboard-nav-link p-3 rounded-4">
+                <a href="/tickets.html" class="text-decoration-none t-text-16 text-dark fs-4 hstack gap-3 dashboard-nav-link t-p-[10px] rounded-4">
                   <i class="fa-solid fa-ticket"></i>
                   <span class="fw-medium">Tickets</span>
-                  <span class="ms-auto badge rounded-circle notification-num">1</span>
+                  <span class="ms-auto badge rounded-circle t-text-10 notification-num">1</span>
                 </a>
               </li>
             </ul>
           </div>
 
           <!-- user info -->
-          <div class="d-flex flex-column align-items-center gap-3 mx-auto p-4 custom-bg rounded-2">
-            <!-- user fulllName -->
-            <h6>Mani Kandan</h6>
+          <div class="t-flex t-justify-center">
+            <div class="d-flex flex-column align-items-center gap-3 mx-auto t-px-[20px] t-pt-[20px] rounded-2 custom-bg">
+              <!-- user fulllName -->
+              <h6 class="t-text-16 t-font-bold">Mani Kandan</h6>
 
-            <!-- user id container -->
-            <div>
-              <!-- icon -->
-              <i class="fa-solid fa-arrow-right"></i>
-              <!-- use id -->
-              <span>ID</span>
-              <!-- icon -->
-              <i class="fa-solid fa-arrow-left"></i>
+              <!-- user id container -->
+              <div class="t-text-16 t-font-bold">
+                <!-- icon -->
+                <i class="fa-solid fa-arrow-right"></i>
+                <!-- use id -->
+                <span>ID</span>
+                <!-- icon -->
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+
+              <!-- logout button -->
+              <button type="button" class="btn btn-light t-text-14 t-font-medium btn-lg-out-long">
+                Log Out
+              </button>
+
+              <!-- feedback modal toggler -->
+              <button type="button" class="btn btn-link text-dark custom-link t-text-12" data-bs-toggle="modal" data-bs-target="#feedbackAndSupport">
+                Support / Feedback
+              </button>
             </div>
-
-            <!-- logout button -->
-            <button type="button" class="btn btn-light">Log Out</button>
-
-            <!-- feedback modal toggler -->
-            <button type="button" class="btn btn-link text-dark custom-link" data-bs-toggle="modal" data-bs-target="#feedbackAndSupport">
-              Support / Feedback
-            </button>
           </div>
         </nav>
         <!-- navigation ends -->
 
         <!-- dashboard view starts -->
-        <section class="col-md-9 p-4">
+        <section class="col-md-9 t-p-[40px]">
           <header class="d-flex justify-content-between mb-5">
             <!-- name of the current page under the dashoard -->
-            <h2>Properties</h2>
+            <h2 class="t-text-24 t-font-bold">Properties</h2>
             <!-- cerate a property toggler button -->
-            <button class="btn btn-dark custom-dark-btn" data-bs-toggle="modal" data-bs-target="#addProperty">
+            <button class="btn btn-dark custom-dark-btn t-text-14 t-font-bold btn-long" data-bs-toggle="modal" data-bs-target="#addProperty">
               Add New
             </button>
           </header>
@@ -100,7 +106,7 @@
           <ul class="list-unstyled">
             <li class="bg-light rounded-2 p-2 overflow-hidden shadow">
               <div class="table-responsive">
-                <table class="table table-light table-borderless">
+                <table class="table table-light table-borderless t-text-14">
                   <thead>
                     <tr>
                       <th class="fw-normal">Address</th>
@@ -135,10 +141,10 @@
 
     <!-- modal for feedback and support starts -->
     <div class="modal fade" id="feedbackAndSupport" tabindex="-1" aria-labelledby="feedbackAndSupportLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
         <div class="modal-content bg-white">
           <div class="modal-header">
-            <h5 class="modal-title fs-5" id="feedbackAndSupportLabel">
+            <h5 class="modal-title t-text-24 t-font-bold" id="feedbackAndSupportLabel">
               Feedback
             </h5>
           </div>
@@ -146,8 +152,8 @@
             <form>
               <!-- reason select container -->
               <div class="mb-3">
-                <label for="reason" class="form-label">Reason</label>
-                <select type="text" class="form-select focus-ring focus-ring-dark" name="reason">
+                <label for="reason" class="form-label t-text-14 t-font-bold">Reason</label>
+                <select type="text" class="form-select focus-ring focus-ring-dark t-text-14" name="reason">
                   <option value="bug-fix">Bug Fix</option>
                   <option value="feature-request">Feature Request</option>
                   <option value="other">Other</option>
@@ -156,13 +162,13 @@
 
               <!-- comment textarea container -->
               <div class="mb-3">
-                <label for="comment" class="form-label">Comments</label>
-                <textarea name="comment" id="comment" rows="5" class="form-control focus-ring focus-ring-dark" placeholder=""></textarea>
+                <label for="comment" class="form-label t-text-14 t-font-bold">Comments</label>
+                <textarea name="comment" id="comment" rows="5" class="form-control focus-ring focus-ring-dark t-text-14" placeholder=""></textarea>
               </div>
 
               <!-- submit button container -->
               <div class="text-center">
-                <button type="submit" class="btn btn-dark custom-dark-btn">
+                <button type="submit" class="btn btn-dark custom-dark-btn t-text-15 btn-long t-font-bold">
                   Submit
                 </button>
               </div>
@@ -175,7 +181,7 @@
 
     <!-- modal for adding a property starts -->
     <div class="modal fade" id="addProperty" tabindex="-1" aria-labelledby="addPropertyLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
         <div class="modal-content bg-white">
           <div class="modal-header">
             <h5 class="modal-title fs-5" id="addPropertyLabel">
@@ -190,31 +196,31 @@
                 <!-- street address -->
                 <div class="mb-3">
                   <label for="streetAddress" class="visually-hidden">Street Address</label>
-                  <input type="text" name="streetAddress" id="streetAddress" class="form-control focus-ring focus-ring-dark" placeholder="Street Address">
+                  <input type="text" name="streetAddress" id="streetAddress" class="form-control focus-ring focus-ring-dark t-text-14" placeholder="Street Address">
                 </div>
 
                 <!-- city -->
                 <div class="mb-3">
                   <label for="city" class="visually-hidden">City</label>
-                  <input type="text" name="city" id="city" class="form-control focus-ring focus-ring-dark" placeholder="City">
+                  <input type="text" name="city" id="city" class="form-control focus-ring focus-ring-dark t-text-14" placeholder="City">
                 </div>
 
                 <!-- state -->
                 <div class="mb-3">
                   <label for="state" class="visually-hidden">State</label>
-                  <input type="text" name="state" id="state" class="form-control focus-ring focus-ring-dark" placeholder="State">
+                  <input type="text" name="state" id="state" class="form-control focus-ring focus-ring-dark t-text-14" placeholder="State">
                 </div>
 
                 <!-- zipCode -->
                 <div class="mb-3">
                   <label for="zipCode" class="visually-hidden">Zip Code</label>
-                  <input type="text" name="zipCode" id="zipCode" class="form-control focus-ring focus-ring-dark" placeholder="Zip Code">
+                  <input type="text" name="zipCode" id="zipCode" class="form-control focus-ring focus-ring-dark t-text-14" placeholder="Zip Code">
                 </div>
 
                 <!-- taxDistrict -->
                 <div class="mb-3">
                   <label for="taxDistrict" class="visually-hidden">Tax District</label>
-                  <input type="text" name="taxDistrict" id="taxDistrict" class="form-control focus-ring focus-ring-dark" placeholder="Tax District">
+                  <input type="text" name="taxDistrict" id="taxDistrict" class="form-control focus-ring focus-ring-dark t-text-14" placeholder="Tax District">
                 </div>
               </div>
 
@@ -222,20 +228,20 @@
               <div>
                 <!-- Owner Id -->
                 <div class="mb-3">
-                  <label for="ownerId" class="form-label fw-bold">Owner ID</label>
-                  <input type="text" name="ownerId" id="ownerId" class="form-control focus-ring focus-ring-dark" placeholder="">
+                  <label for="ownerId" class="form-label t-text-14 t-font-bold fw-bold">Owner ID</label>
+                  <input type="text" name="ownerId" id="ownerId" class="form-control focus-ring focus-ring-dark t-text-14" placeholder="">
                 </div>
 
                 <!-- Tenant Id -->
                 <div class="mb-3">
-                  <label for="tenantID" class="form-label fw-bold">Tenant ID</label>
-                  <input type="text" name="tenantID" id="tenantID" class="form-control focus-ring focus-ring-dark" placeholder="">
+                  <label for="tenantID" class="form-label t-text-14 t-font-bold fw-bold">Tenant ID</label>
+                  <input type="text" name="tenantID" id="tenantID" class="form-control focus-ring focus-ring-dark t-text-14" placeholder="">
                 </div>
               </div>
 
               <!-- submit button container -->
               <div class="text-center">
-                <button type="submit" class="btn btn-dark custom-dark-btn">
+                <button type="submit" class="btn btn-dark custom-dark-btn t-text-15 btn-long t-font-bold">
                   Submit
                 </button>
               </div>

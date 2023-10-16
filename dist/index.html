@@ -20,21 +20,21 @@
     <main class="min-vh-100 d-flex flex-column justify-content-between">
       <!-- navigation starts -->
       <nav class="navbar">
-        <div class="container-fluid">
+        <div class="container-fluid t-font-os">
           <!-- logo -->
           <a class="navbar-brand" href="/">
-            <div class="d-flex fw-bold fs-3 logo">
-              <span>Rooraw</span>
-              <span class="text-primary fst-italic" style="font-size: .5em">BETA</span>
+            <div class="d-flex fw-bold fs-3 logo t-font-ab">
+              <span class="t-text-24">Rooraw</span>
+              <span class="text-primary fst-italic t-text-12">BETA</span>
             </div>
           </a>
 
           <div id="homepage-navbar" class="d-flex gap-2">
             <!-- authentication -->
             <div class="ms-lg-auto">
-              <a class="btn fw-bold" href="/login.html">Login</a>
+              <a class="btn fw-bold t-text-15 btn-long" href="/login.html">Login</a>
 
-              <a class="btn btn-dark custom-dark-btn" href="/sign-up.html">
+              <a class="btn btn-dark custom-dark-btn t-text-15 btn-long" href="/sign-up.html">
                 Sign-up
               </a>
             </div>
@@ -51,27 +51,27 @@
       <!-- hero section starts -->
       <section>
         <div class="container">
-          <div class="row align-items-center">
+          <div class="t-flex t-justify-center t-items-center">
             <!-- text container -->
-            <div class="col-lg-6">
+            <div class="t-max-w-[408px] t-flex t-flex-col t-gap-[48px] t-justify-start">
               <!-- heading -->
-              <h2 class="display-2 fw-medium lh-sm mb-4">
+              <h2 class="display-2 t-font-bold lh-sm t-text-50">
                 Trouble tickets,<br>
                 without the<br>
                 trouble
               </h2>
 
               <!-- description -->
-              <div>
-                <p class="fs-5">
+              <div class="t-flex t-flex-col t-items-start t-gap-[24px]">
+                <p class="t-text-16">
                   Rooraw is a property management platform to allow ease-of-use
                   for property managers, tenants, and owners.
                 </p>
-                <a class="btn btn-dark" href="#learn-more">Learn More</a>
+                <a class="btn btn-dark t-text-15 btn-long" href="#learn-more">Learn More</a>
               </div>
             </div>
             <!-- image container -->
-            <div class="col-lg-6">
+            <div class="t-max-w-[500px] t-hidden md:t-block">
               <img src="/house.00a59c9f.jpeg" alt="image house and trees in very minimal colors" class="img-fluid">
             </div>
           </div>
@@ -84,12 +84,12 @@
         <!-- links section -->
         <div class="d-flex justify-content-end">
           <ul class="list-unstyled">
-            <li class="fw-bold fs-5 mb-1">Support</li>
+            <li class="fw-bold fs-5 mb-1 t-text-16">Support</li>
             <li>
-              <a href="#documentation" class="text-dark text-decoration-none">Documentation</a>
+              <a href="#documentation" class="text-dark text-decoration-none t-text-16">Documentation</a>
             </li>
             <li>
-              <a href="/help_center.html" class="text-dark text-decoration-none">Sign-in Help</a>
+              <a href="/help_center.html" class="text-dark text-decoration-none t-text-16">Sign-in Help</a>
             </li>
           </ul>
         </div>
@@ -99,9 +99,9 @@
 
         <!-- copyright info -->
         <div>
-          <p class="fs-6 fw-lighter text-muted">
+          <p class="fw-lighter text-muted">
             &copy;
-            <span id="year"><!-- current year will be added via javascript --></span>
+            <span id="year" class="t-text-14"><!-- current year will be added via javascript --></span>
             Rooraw Incorporated. All rights reserved.
           </p>
         </div>

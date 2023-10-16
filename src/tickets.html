@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard | Properties</title>
+    <title>Sign Up</title>
     <!-- google fonts Open Sans and Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,34 +24,34 @@
     <!-- tailwindcss -->
     <link rel="stylesheet" href="./assets/scss/tailwind.css" />
   </head>
-  <body>
+  <body class="t-bg-white">
     <!-- content starts -->
     <main class="container-fluid">
       <div class="row min-vh-100">
         <!-- navigation starts -->
         <nav
-          class="col-md-3 d-flex flex-column justify-content-between pt-2 pb-5 lg-disappear custom-h-shadow"
+          class="col-md-3 d-flex flex-column justify-content-between t-p-[20px] lg-disappear custom-h-shadow t-max-w-[280px] t-bg-[#e9e9e9]"
         >
           <!-- logo -->
-          <a class="navbar-brand" href="/">
-            <div class="d-flex fw-bold fs-3 logo">
-              <span>Rooraw</span>
-              <span class="text-primary fst-italic" style="font-size: 0.5em"
-                >BETA</span
-              >
+          <a class="navbar-brand t-px-[20px]" href="/">
+            <div class="d-flex fw-bold fs-3 logo t-font-ab">
+              <span class="t-text-24">Rooraw</span>
+              <span class="text-primary fst-italic t-text-12">BETA</span>
             </div>
           </a>
 
           <!-- Dashboard navigation links section -->
           <div>
             <!-- heading as per the user role type -->
-            <h3 class="mb-4">Manager Dashboard</h3>
+            <h3 class="mb-4 t-text-24 t-text-center t-font-bold t-mb-[35px]">
+              Manager Dashboard
+            </h3>
             <!-- links -->
-            <ul class="list-unstyled vstack">
+            <ul class="list-unstyled vstack t-gap-[25px]">
               <li>
                 <a
                   href="properties.html"
-                  class="text-decoration-none text-dark fs-4 hstack gap-3 dashboard-nav-link p-3 rounded-4"
+                  class="text-decoration-none t-text-16 text-dark fs-4 hstack gap-3 dashboard-nav-link t-p-[10px] rounded-4"
                 >
                   <i class="fa-solid fa-house-chimney"></i>
                   <span class="fw-medium">Properties</span>
@@ -61,7 +61,7 @@
               <li>
                 <a
                   href="tenants.html"
-                  class="text-decoration-none text-dark fs-4 hstack gap-3 dashboard-nav-link p-3 rounded-4"
+                  class="text-decoration-none t-text-16 text-dark fs-4 hstack gap-3 dashboard-nav-link t-p-[10px] rounded-4"
                 >
                   <i class="fa-solid fa-users"></i>
                   <span class="fw-medium">Tenants</span>
@@ -71,12 +71,12 @@
               <li>
                 <a
                   href="tickets.html"
-                  class="text-decoration-none text-dark fs-4 hstack gap-3 dashboard-nav-link p-3 rounded-4"
+                  class="text-decoration-none t-text-16 text-dark fs-4 hstack gap-3 dashboard-nav-link t-p-[10px] rounded-4"
                 >
                   <i class="fa-solid fa-ticket"></i>
                   <span class="fw-medium">Tickets</span>
                   <span
-                    class="ms-auto badge rounded-circle notification-num small fs-6"
+                    class="ms-auto badge rounded-circle t-text-10 notification-num"
                     >1</span
                   >
                 </a>
@@ -85,49 +85,56 @@
           </div>
 
           <!-- user info -->
-          <div
-            class="d-flex flex-column align-items-center gap-3 mx-auto p-4 custom-bg rounded-2"
-          >
-            <!-- user fulllName -->
-            <h6>Mani Kandan</h6>
-
-            <!-- user id container -->
-            <div>
-              <!-- icon -->
-              <i class="fa-solid fa-arrow-right"></i>
-              <!-- use id -->
-              <span>ID</span>
-              <!-- icon -->
-              <i class="fa-solid fa-arrow-left"></i>
-            </div>
-
-            <!-- logout button -->
-            <button type="button" class="btn btn-light">Log Out</button>
-
-            <!-- feedback modal toggler -->
-            <button
-              type="button"
-              class="btn btn-link text-dark custom-link"
-              data-bs-toggle="modal"
-              data-bs-target="#feedbackAndSupport"
+          <div class="t-flex t-justify-center">
+            <div
+              class="d-flex flex-column align-items-center gap-3 mx-auto t-px-[20px] t-pt-[20px] rounded-2 custom-bg"
             >
-              Support / Feedback
-            </button>
+              <!-- user fulllName -->
+              <h6 class="t-text-16 t-font-bold">Mani Kandan</h6>
+
+              <!-- user id container -->
+              <div class="t-text-16 t-font-bold">
+                <!-- icon -->
+                <i class="fa-solid fa-arrow-right"></i>
+                <!-- use id -->
+                <span>ID</span>
+                <!-- icon -->
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+
+              <!-- logout button -->
+              <button
+                type="button"
+                class="btn btn-light t-text-14 t-font-medium btn-lg-out-long"
+              >
+                Log Out
+              </button>
+
+              <!-- feedback modal toggler -->
+              <button
+                type="button"
+                class="btn btn-link text-dark custom-link t-text-12"
+                data-bs-toggle="modal"
+                data-bs-target="#feedbackAndSupport"
+              >
+                Support / Feedback
+              </button>
+            </div>
           </div>
         </nav>
         <!-- navigation ends -->
 
         <!-- dashboard view starts -->
-        <section class="col-md-9 p-4">
+        <section class="col-md-9 t-p-[40px]">
           <header class="mb-5">
             <!-- name of the current page under the dashoard -->
-            <h2 class="mb-5">Tickets</h2>
+            <h2 class="t-text-24 t-font-bold t-mb-[40px]">Tickets</h2>
 
             <!-- tabs to navigate between active and archived -->
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <button
-                  class="nav-link active"
+                  class="nav-link active t-text-14"
                   id="activeTab"
                   data-bs-toggle="tab"
                   data-bs-target="#active"
@@ -136,10 +143,10 @@
                   aria-controls="active"
                   aria-selected="true"
                 >
-                  Home
+                  Active
                 </button>
                 <button
-                  class="nav-link"
+                  class="nav-link t-text-14"
                   id="archivedTab"
                   data-bs-toggle="tab"
                   data-bs-target="#archived"
@@ -148,7 +155,7 @@
                   aria-controls="archived"
                   aria-selected="false"
                 >
-                  Profile
+                  Archived
                 </button>
               </div>
             </nav>
@@ -169,7 +176,7 @@
                   class="bg-light rounded-2 p-2 overflow-hidden shadow position-relative"
                 >
                   <div class="table-responsive">
-                    <table class="table table-light table-borderless">
+                    <table class="table table-light table-borderless t-text-14">
                       <thead>
                         <tr>
                           <th class="fw-normal">Tenant</th>
@@ -219,7 +226,7 @@
               <ul class="list-unstyled">
                 <li class="bg-light rounded-2 p-2 overflow-hidden shadow">
                   <div class="table-responsive">
-                    <table class="table table-light table-borderless">
+                    <table class="table table-light table-borderless t-text-14">
                       <thead>
                         <tr>
                           <th class="fw-normal">Name</th>
@@ -260,10 +267,13 @@
       aria-labelledby="feedbackAndSupportLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
         <div class="modal-content bg-white">
           <div class="modal-header">
-            <h5 class="modal-title fs-5" id="feedbackAndSupportLabel">
+            <h5
+              class="modal-title t-text-24 t-font-bold"
+              id="feedbackAndSupportLabel"
+            >
               Feedback
             </h5>
           </div>
@@ -271,11 +281,13 @@
             <form>
               <!-- reason select container -->
               <div class="mb-3">
-                <label for="status" class="form-label">Reason</label>
+                <label for="reason" class="form-label t-text-14 t-font-bold"
+                  >Reason</label
+                >
                 <select
                   type="text"
-                  class="form-select focus-ring focus-ring-dark"
-                  name="status"
+                  class="form-select focus-ring focus-ring-dark t-text-14 t-text-14"
+                  name="reason"
                 >
                   <option value="bug-fix">Bug Fix</option>
                   <option value="feature-request">Feature Request</option>
@@ -285,18 +297,24 @@
 
               <!-- comment textarea container -->
               <div class="mb-3">
-                <label for="comment" class="form-label">Comments</label>
+                <label for="comment" class="form-label t-text-14 t-font-bold"
+                  >Comments</label
+                >
                 <textarea
                   name="comment"
                   id="comment"
                   rows="5"
-                  class="form-control focus-ring focus-ring-dark"
+                  class="form-control focus-ring focus-ring-dark t-text-14 t-text-14"
+                  placeholder=""
                 ></textarea>
               </div>
 
               <!-- submit button container -->
               <div class="text-center">
-                <button type="submit" class="btn btn-dark custom-dark-btn">
+                <button
+                  type="submit"
+                  class="btn btn-dark custom-dark-btn t-text-15"
+                >
                   Submit
                 </button>
               </div>
@@ -315,19 +333,20 @@
       aria-labelledby="editLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
         <div class="modal-content bg-white">
           <div class="modal-header">
-            <h5 class="modal-title fs-5" id="editLabel">
+            <h5 class="modal-title t-text-24 t-font-bold" id="editLabel">
               Add/Edit Ticket Information
             </h5>
           </div>
           <div class="modal-body">
             <form>
               <!-- status -->
+              <span class="fw-bold t-text-14">Status</span>
               <select
                 type="text"
-                class="form-select focus-ring focus-ring-dark mb-3"
+                class="form-select focus-ring focus-ring-dark mb-3 t-text-14"
                 name="reason"
               >
                 <option value="on-going">On-going</option>
@@ -335,7 +354,7 @@
                 <option value="resolved">Resolved</option>
               </select>
 
-              <span class="fw-bold">Provider Detail</span>
+              <span class="fw-bold t-text-14">Provider Detail</span>
               <div class="mb-3">
                 <label for="companyName" class="form-label visually-hidden"
                   >Company Name</label
@@ -344,7 +363,7 @@
                   type="text"
                   id="companyName"
                   name="companyName"
-                  class="form-control focus-ring focus-ring-dark"
+                  class="form-control focus-ring focus-ring-dark t-text-14"
                   placeholder="Company Name"
                 />
               </div>
@@ -357,7 +376,7 @@
                   type="text"
                   id="serviceName"
                   name="serviceName"
-                  class="form-control focus-ring focus-ring-dark"
+                  class="form-control focus-ring focus-ring-dark t-text-14"
                   placeholder="Servicer Full Name"
                 />
               </div>
@@ -371,7 +390,7 @@
                     type="text"
                     id="city"
                     name="city"
-                    class="form-control focus-ring focus-ring-dark"
+                    class="form-control focus-ring focus-ring-dark t-text-14"
                     placeholder="Street"
                   />
                 </div>
@@ -384,7 +403,7 @@
                     type="text"
                     id="state"
                     name="state"
-                    class="form-control focus-ring focus-ring-dark"
+                    class="form-control focus-ring focus-ring-dark t-text-14"
                     placeholder="State"
                   />
                 </div>
@@ -399,7 +418,7 @@
                     type="text"
                     id="zipCode"
                     name="zipCode"
-                    class="form-control focus-ring focus-ring-dark"
+                    class="form-control focus-ring focus-ring-dark t-text-14"
                     placeholder="Zip code"
                   />
                 </div>
@@ -412,14 +431,31 @@
                     type="text"
                     id="phoneNumber"
                     name="phoneNumber"
-                    class="form-control focus-ring focus-ring-dark"
+                    class="form-control focus-ring focus-ring-dark t-text-14"
                     placeholder="Phone Number"
                   />
                 </div>
               </div>
 
               <div class="mb-3">
-                <label for="addResolution" class="form-label"
+                <label
+                  for="serviceDate"
+                  class="form-label t-text-14 t-font-bold"
+                  >Service Date</label
+                >
+                <input
+                  type="text"
+                  id="serviceDate"
+                  name="serviceDate"
+                  class="form-control focus-ring focus-ring-dark t-text-14"
+                  placeholder=""
+                />
+              </div>
+
+              <div class="mb-3">
+                <label
+                  for="addResolution"
+                  class="form-label t-text-14 t-font-bold"
                   >Add resolution</label
                 >
                 <textarea
@@ -427,14 +463,17 @@
                   type="text"
                   id="addResolution"
                   name="addResolution"
-                  class="form-control focus-ring focus-ring-dark"
+                  class="form-control focus-ring focus-ring-dark t-text-14"
                   placeholder=""
                 ></textarea>
               </div>
 
               <!-- submit button container -->
               <div class="text-center">
-                <button type="submit" class="btn btn-dark custom-dark-btn">
+                <button
+                  type="submit"
+                  class="btn btn-dark custom-dark-btn t-text-15 btn-long t-font-bold"
+                >
                   Submit
                 </button>
               </div>
