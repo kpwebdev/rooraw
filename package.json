@@ -5,7 +5,8 @@
   "source": "./src/index.html",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "tailwind-watch": "tailwindcss -i ./src/assets/scss/tailwind.scss -o ./src/assets/scss/tailwind.css -w"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.10.0",
-    "parcel": "^2.10.0"
+    "parcel": "^2.10.0",
+    "tailwindcss": "^3.3.3"
   }
 }
